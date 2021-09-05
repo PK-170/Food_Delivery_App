@@ -6,6 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Magic Meal app!</Text>
+      <Text>Get your food now!</Text>
       <StatusBar style="auto" />
     </View>
   );
