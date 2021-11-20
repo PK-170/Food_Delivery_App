@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 
-export default function Header() {
+export default function Header(props) {
     // to keep track of the state
-    const [activeTab, setActiveTab] = useState("Delivery");
     return (
         <View style={{flexDirection: "row", alignSelf:"center"}}>
             {/*first button*/}
@@ -11,8 +10,8 @@ export default function Header() {
                text="Delivery" 
                btnColor="black" 
                textColor="white" 
-               activeTab={activeTab} 
-               setActiveTab={setActiveTab}
+               activeTab={props.activeTab} 
+               setActiveTab={props.setActiveTab}
             />
 
             {/*second button*/}
@@ -21,8 +20,8 @@ export default function Header() {
                 text="Pickup" 
                 btnColor="white" 
                 textColor="black"
-                activeTab={activeTab} 
-                setActiveTab={setActiveTab}
+                activeTab={props.activeTab} 
+                setActiveTab={props.setActiveTab}
             />
         </View>
     )
