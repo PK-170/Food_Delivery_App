@@ -8,7 +8,7 @@ export const localRestaurants = [
     name: "Logan Brown (Wellington)",
     image_url:
       "https://images.myguide-cdn.com/wellington/companies/logan-brown-restaurant-and-bar/large/logan-brown-restaurant-and-bar-66783.jpg",
-    categories: ["Cafe", "Bar"],
+    categories: ["Restaurant", "Bar"],
     price: "$$",
     reviews: 566,
     rating: 5.0,
@@ -17,7 +17,7 @@ export const localRestaurants = [
     name: "Leuven (Wellington)",
     image_url:
       "https://images.myguide-cdn.com/md/wellington/companies/leuven-belgium-beer-cafe/large/leuven-belgium-beer-cafe-704748.jpg",
-    categories: ["Cafe", "Bar"],
+    categories: ["Restaurant", "Bar"],
     price: "$$",
     reviews: 755,
     rating: 4.7,
@@ -26,10 +26,19 @@ export const localRestaurants = [
     name: "Mishmosh (Wellington)",
     image_url:
       "https://goodcms.s3.amazonaws.com/woap/venue/Mishmosh-190521-105646.jpg",
-    categories: ["Indian", "Bar"],
+    categories: ["Club", "Bar"],
     price: "$$",
     reviews: 733,
     rating: 4.5,
+  },
+  {
+    name: "le marché français (Wellington)",
+    image_url:
+      "https://media-cdn.tripadvisor.com/media/photo-s/07/80/7a/79/le-marche-francais.jpg",
+    categories: ["Cafe", "Bar"],
+    price: "$$",
+    reviews: 933,
+    rating: 4.7,
   },
 ];
 
@@ -42,7 +51,7 @@ export default function RestaurantItems({ navigation, ...props }) {
           activeOpacity={1}
           style={{ marginBottom: 30 }}
           onPress={() =>
-            navigation.navigate("RestaurantDetail", {
+            navigation.navigate("RestaurantMenu", {
               name: restaurant.name,
               image: restaurant.image_url,
               price: restaurant.price,

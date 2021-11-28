@@ -13,8 +13,6 @@ export default function BottomHome() {
         }}
       >
         <Icon icon="home" text="Home" />
-        <Icon icon="search" text="Browse" />
-        <Icon icon="shopping-bag" text="Food" />
         <Icon icon="receipt" text="Orders" />
         <Icon icon="user" text="Account" />
       </View>
