@@ -12,7 +12,7 @@ import SearchBox from "../components/SearchBox";
 //import {onBackPress} from '../components/BackPressHandler';
 
 const YELP_API_KEY =
-  "OzFG_hxdDcWgQQ64y9c6p1IFwlQMsCtFsG6joW2BJYR6wqStIlgyd4Vs9BzVXSC1wpynyxvIVlShVQ9gpm0NgqrpotRPKuhdHbR4iwjxeMa2d_HFUszgwA23WoCIYXYx ";
+  "You need your own api key and paste it here";
 
 export default function Home({ navigation }) {
   
